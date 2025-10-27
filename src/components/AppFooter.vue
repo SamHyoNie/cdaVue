@@ -1,0 +1,22 @@
+<template>
+        <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+  <nav>
+    <h6 class="footer-title">A propos de nous</h6>
+    <p>© 2024 My Vue App. All rights reserved.</p>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Navigation</h6>
+    <a class="link link-hover">About us</a>
+    <a class="link link-hover">Contact</a>
+    <a class="link link-hover">Jobs</a>
+    <a class="link link-hover">Press kit</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Legal</h6>
+    <a class="link link-hover">Terms of use</a>
+    <a class="link link-hover">Privacy policy</a>
+    <a class="link link-hover">Cookie policy</a>
+  </nav>
+
+    </footer>
+</template>
