@@ -13,17 +13,17 @@
                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                     <li><a>Services</a></li>
                     <li>
-                        <a>Contact</a>
+                        <router-link to="/contact">Contact</router-link>
                     </li>
                 </ul>
             </div>
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+            <router-link to="/" class="btn btn-ghost normal-case text-xl">CDA Vue</router-link>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
                 <li><a>Services</a></li>
                 <li>
-                    <a>Contact</a>
+                    <router-link to="/contact">Contact</router-link>
                 </li>
             </ul>
         </div>
