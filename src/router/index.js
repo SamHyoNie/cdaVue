@@ -39,6 +39,23 @@ const router = createRouter({
             path: '/exo-text-interpolation',
             name: 'ExoTextInterpolation',
             component: () => import('../views/exercices/exo-text-interpolation.vue')
+        },
+        {
+            path: '/data-binding',
+            name: 'DataBinding',
+            component: () => import('../views/lesson/attribute-binding.vue')
+        },
+        {
+            path: '/exo-binding-interpolation',
+            name: 'ExoBindingInterpolation',
+            component: () => import('../views/exercices/exo-data-binding.vue')
+        },
+        {
+            path: '/inline-templating',
+            name: 'InlineTemplating',
+            component: () => import('../views/lesson/inline-templating.vue')
+        },
+        {
         }
     ]
 });
