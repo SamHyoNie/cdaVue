@@ -56,6 +56,14 @@ const router = createRouter({
             component: () => import('../views/lesson/inline-templating.vue')
         },
         {
+            path: '/event-binding',
+            name: 'EventBinding',
+            component: () => import('../views/lesson/event-binding.vue')
+        }, 
+        {
+            path: '/exo-event-binding',
+            name: 'ExoEventBinding',
+            component: () => import('../views/exercices/exo-event-binding.vue')
         }
     ]
 });

@@ -4,7 +4,7 @@
         <div class="overflow-x-auto">
             <img :src=imageUser alt="cosplay bizare?!">
             <p>{{ personne.nom }}</p>
-            <input type="text" name="" id="" :value='personne.nom' class="input-neutral">
+            <input type="text" name="" id="" :value='personne.nom' class="input-bordered input">
             <p>Age : {{ personne.age }}ans</p>
             <p>Age + 10 : {{ personne.age + 10 }}ans</p>
             <p>Nombre fétiche : {{ random(personne.age) }}</p>
