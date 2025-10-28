@@ -11,8 +11,8 @@ au bouton middle de la souris)*/
             <h1>Exercice Event Binding</h1>
             <div class="overflow-x-auto">
                 <p>Compteur : {{ compteur }}</p> // 2 manières de lier un événement à une fonction
-                <button v-on:click="reduire" class="btn btn-secondary m-2">-</button>
-                <button @click="augmenter" class="btn btn-primary m-2">+</button>
+                <button v-on:click.middle="reduire(11)" class="btn btn-secondary m-2">-</button>
+                <button @click.right="augmenter(99)" class="btn btn-primary m-2">+</button>
             </div>
 
         </div>
@@ -21,12 +21,12 @@ au bouton middle de la souris)*/
 <script setup lang="js">
 import { ref } from 'vue';
 const compteur = ref(0);
-const augmenter = () => { // deux manières de définir une fonction
+const augmenter = (x) => { // deux manières de définir une fonction
     console.log("clic droit détecté");
-    compteur.value += 99;
+    compteur.value += x;
 };
-function reduire(){
+function reduire(x){
     console.log("clic midle détecté");
-    compteur.value -= 11;
+    compteur.value -= x;
 };
 </script>
