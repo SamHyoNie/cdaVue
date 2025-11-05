@@ -26,3 +26,34 @@ const random = (x) => {
 </script>
 
 <style scoped lang="css"></style>
+
+
+<template>
+    <div class="card bg-base-100 w-96 shadow-sm">
+        <figure>
+            <img src="../assets/gastly.gif"
+                alt="fantominus gif" srcset="">
+        </figure>
+        <div class="card-body">
+            <h2 class="card-title">Rival <img src="../assets/coeur.png" alt="" srcset=""></h2>
+            <progress class="progress w-85" value={{ rivalHealth }} max="100"></progress>
+        </div>
+    </div>
+    <div class="card bg-base-100 w-96 shadow-sm">
+        <figure>
+            <img src="../assets/pika.gif"
+                alt="" srcset="">
+        </figure>
+        <div class="card-body">
+            <h2 class="card-title">Player <img src="../assets/coeur.png" alt="" srcset=""></h2>
+            <progress class="progress w-85" value={{ playerHealth }} max="100"></progress>
+        </div>
+    </div>
+</template>
+
+<script setup lang='js'>
+import { ref } from 'vue';
+const playerHealth = ref(100);
+const rivalHealth = ref(100);
+</script>
+<style scoped lang="css"></style>

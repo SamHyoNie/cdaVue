@@ -64,6 +64,16 @@ const router = createRouter({
             path: '/exo-event-binding',
             name: 'ExoEventBinding',
             component: () => import('../views/exercices/exo-event-binding.vue')
+        },
+        {
+            path: '/exo-28-10-25',
+            name: 'Exo281025',
+            component: () => import('../views/exercices/exo-28-10-25.vue')
+        },
+        {
+            path: '/watchers',
+            name: 'Watchers',
+            component: () => import('../views/lesson/lesson-watchers.vue')
         }
     ]
 });
