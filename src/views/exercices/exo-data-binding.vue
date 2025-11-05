@@ -28,7 +28,7 @@ const random = (x) => {
 <style scoped lang="css"></style>
 
 
-<template>
+<!--<template>
     <div class="card bg-base-100 w-96 shadow-sm">
         <figure>
             <img src="../assets/gastly.gif"
@@ -56,4 +56,4 @@ import { ref } from 'vue';
 const playerHealth = ref(100);
 const rivalHealth = ref(100);
 </script>
-<style scoped lang="css"></style>
+<style scoped lang="css"></style>-->
